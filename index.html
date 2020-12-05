@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>농구게임</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div id="wrap">
+        <div class="scoreBoard">
+            <div class="scoreBoard inner">
+                <div class="shots-left">
+                    <span>남은 슛 횟수</span>
+                    <span id="shotsCount">15</span>
+                </div>
+                <div class="score">
+                    <div class="score-name">컴퓨터</div>
+                    <div id="computer-score" class="score-number">0</div>
+                </div>
+                <div class="score">
+                    <div class="score-name">사용자</div>
+                    <div id="user-score" class="score-number">0</div>
+                </div>
+                <div id="text"></div>
+            </div>
+        </div>
+        <div class="control-panel">
+            <div id="computer" class="panel">
+                <div class="control-name">컴퓨터</div>
+                <button class="btn-computer" onclick="onComputerShoot()" disabled>슛하기</button>
+            </div>
+            <div id="user" class="panel">
+                <div class="control-name">사용자</div>
+                <button class="btn-user" onclick="onUserShoot(2)" disabled>2점슛</button>
+                <button class="btn-user" onclick="onUserShoot(3)" disabled>3점슛</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery-3.5.1.min.js"></script>
+    <script src="js/jquery.animateNumber.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>
